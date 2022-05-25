@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.easybook_airlines">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Easy Book Airlines"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:replace="android:label"
+        android:theme="@style/Theme.EasyBookAirlines">
+        <activity android:name=".GateWay_payment"/>
+        <activity android:name=".User_purchase_History" />
+        <activity android:name=".User_list_recyclerView" />
+        <activity android:name=".Admin_menu" />
+        <activity
+            android:name=".User_Notification"
+            android:parentActivityName=".SearchTicket" />
+        <activity android:name=".Admin_Notification" />
+        <activity android:name=".userRecycler" />
+        <activity android:name=".updateFlight" />
+        <activity android:name=".Important" />
+        <activity android:name=".AddFlight" />
+        <activity android:name=".AdminLogin" />
+        <activity
+            android:name=".SearchTicket"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".Login" />
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@color/toolbar"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/circle_background"
+        app:srcCompat="@drawable/admin_photo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:fontFamily="cursive"
+        android:text="ADMIN"
+        android:textColor="#090808"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</LinearLayout>
